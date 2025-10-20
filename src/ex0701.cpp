@@ -5,28 +5,31 @@
 
 using namespace std; 
 
-class color{
+class Color{
 private:
    double r, g, b;
+
 public: 
-   Color(): r(0.0), g(0.0), b(0.0) //initializer list
-   Color(doulbe r, double g, double b): r(r), g(g), b(b){}
-};
+   Color(): r(0.0), g(0.0), b(0.0){} //initializer list
+   Color(double r, double g, double b): r(r), g(g), b(b){}
+
 
 string toRGB(){
    stringstream sout;
-   sout << "rgb(" << static_cast<int> (r * 255) << "," <<
-   sout << "rgb(" << static_cast<int> (g * 255) << "," <<
-   sout << "rgb(" << static_cast<int> (b * 255) << ")" << endl;
+   sout << "rgb(" << static_cast<int>(r * 255) << "," <<
+   "," << static_cast<int>(g * 255) << "," <<
+   "," << static_cast<int>(b * 255) << ")" << endl;
 }
 
 string toHEX(){ //#01AC03 
    stringstream sout;
-   sout << "#" << setfill(0) << hex 
-   << setw(2) << static_cast<int> (r * 255) << "," <<
-   << setw(2) << static_cast<int> (g * 255) << "," <<
-   << setw(2) << static_cast<int> (b * 255) << ")" << endl;
+   sout << "#" << setfill('0') << hex 
+   << setw(2) << static_cast<int>(r * 255) << "," 
+   << setw(2) << static_cast<int>(g * 255) << "," 
+   << setw(2) << static_cast<int>(b * 255) << ")" << endl;
 }
+
+};
 
 int main() {
    Color c; //default to initializer string, Black. 
