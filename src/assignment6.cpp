@@ -8,17 +8,6 @@
 
 using namespace std; 
 
-/*
- * A class representing courses
- * define a custom class with 5 private data members. Pick any concept, book, car, employee data.
- * LETS DO CARS. 
- * Model after "Course" code below. 
- * Four constructors. Different ways to initialize a class. 
- * Destructors for constructors. Similar to Ex07. 
- * Accessor One Public function for each private data member that allows external code to read the value of that member. 
- * Mutators same as Accessors. 
- * str() returns a string that provides a formatted summary of all data members. 
- */
 class Car {
 private:
   string make;      // Toyota
@@ -101,7 +90,6 @@ public:
 
 # endif
 
-//Do I add the main file to this?
 int main() {
   // Create three objects statically (in the stack)
   Car car1;
