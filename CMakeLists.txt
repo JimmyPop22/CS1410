@@ -29,4 +29,5 @@ add_executable(ex0801 src/ex0801.cpp)
 add_executable(ex0802 src/ex0802.cpp src/author.cpp)
 add_executable(ex1001 src/ex1001.cpp)
 add_executable(ex1002 src/ex1002.cpp)
-
+add_executable(ex1101 src/ex1101.cpp)
+add_executable(ex1102 src/ex1102.cpp)
